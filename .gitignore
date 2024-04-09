@@ -1,0 +1,15 @@
+# LaTeX files to ignore
+
+# Emacs backup files
+*~
+
+# Other Emacs files
+.emacs*
+
+# LaTeX detritus
+*.bbl
+*.blg
+*.log
+*.out
+*.pdf
+
