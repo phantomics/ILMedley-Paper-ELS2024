@@ -114,6 +114,9 @@
 %%
 %% The abstract is a short summary of the work to be presented in the
 %% article.
+The Medley Interlisp project aims to restore the Medley Interlisp programming environment for use on modern computers. Interlisp began as an ARPA-sponsored Lisp system for researchers. Upon gaining display capabilities it was renamed Interlisp-D.  Xerox spun out Interlisp-D sales and development with the "Medley" software release, which eventually became the product name. Medley development tapered off in the 1990s and was revived in 2021. The developers have given the current open source version the name "Medley Interlisp" to reflect its history.
+
+
 \begin{abstract}
 The Medley Interlisp revival is a project to restore Medley Interlisp for use on modern computers. Interlisp had its beginnings as a DARPA-sponsored Lisp environment for reasearchers. The language was then ported and expanded into Interlisp-D integrated with the Medley graphical user interface, first released by Xerox and distributed commercially until its development tapered off in the 1990s. Now this software system is running again on contemporary operating systems. The project is aimed at both preserving the Interlisp software created in the past and expanding the scope of what these tools can do and further realizing the promises of interactive, graphically augmented development.
 \end{abstract}
@@ -143,9 +146,9 @@ In 2020, the Medley Project was formed with the goal to modernize the Interlisp 
 Interlisp.org received the source code for Medley Interlisp and its applications from Venue Corporation. Interlisp.org consists of a group of volunteers –- original developers, former users, software historians interested in software preservation, and people interested in software archaeology. This group has focused on:
 
 \begin{itemize}
-  \item Modernizing the infrastructure and source code of Medley Interlisp to run on modern computing platforms;
+  \item Modernizing the infrastructure and source code of Medley Interlisp;
 
-  \item Enhancing Medley Interlisp to work with modern software systems;
+  \item Adapt Medley to run on modern computing platforms;
 
   \item Reducing the barrier to entry for new users; 
 
@@ -154,7 +157,7 @@ Interlisp.org received the source code for Medley Interlisp and its applications
   \item Conducting outreach to potential users, students, software historians, and others to provide an understanding of symbolic computing.
 \end{itemize}
 
-Notable features are the dual executables – one for Common Lisp and one for Interlisp. These function as compilers for the respective languages that support REPL-based interaction.
+Notable is Medley's support for two Lisp dialects: Common Lisp and Interlisp. These are implemented as compilers for the respective languages that support REPL-based interaction.
 
 %% On the right hand side of the screen are two sets of buttons:
 
@@ -260,11 +263,11 @@ Medley Interlisp comprises the basic code implementing the Interlisp language an
 
 \subsubsection{Common Lisp Support}
 
-With the groundswell of support for Common Lisp in the mid-1980s, Xerox PARC extended the Interlisp environment to support Common Lisp, specifically, as of Common Lisp: The Language, Version 1 (CLtL1). The infrastructure supporting Interlisp and Common Lisp is completely integrated such that selection of functionality by either Interlisp or Common Lisp depends merely on the use of packages.
+With the groundswell of support for Common Lisp in the mid-1980s, Xerox PARC extended the Interlisp environment to support Common Lisp, specifically, as of Common Lisp: The Language, Version 1 (CLtL1), along with CLOS and CL's condition system. The infrastructure supporting Interlisp and Common Lisp is completely integrated such that selection of functionality by either Interlisp or Common Lisp depends merely on the use of packages.
 
 %% For example, two versions of the Exec window are initialized as shown in Figure 1 – one using the Interlisp Readtable and functionality selected by the package IL: and one using the Common Lisp Readtable and functionality selected by the package CL:. Both can be used in the same application with transition between the two variants, but there are some rough edges we are working out.
 
-The Common Lisp integration with the Interlisp tools was incomplete. Substantial work has made it easier to use many of the Interlisp tools and utilities, such as HELPSYS, DWIM, and MasterScope. Also, some of the functions and directives in CLtL2 are not available (such as 'declaim' versus 'proclaim'). As we discover these, we are determining how to provide the missing functionality, but some might not be available until 2024.
+The Common Lisp integration with the Interlisp tools was incomplete. Substantial work has made it easier to use many of the Interlisp tools and utilities, such as HELPSYS, DWIM, and MasterScope. Also, some of the functions and directives in CLtL2 are not available (such as 'declaim' versus 'proclaim'). As we discover these, we are determining how to provide the missing functionality, but some might not be available until later in 2024.
 
 \subsubsection{Editing and Browsing Support}
 
@@ -299,7 +302,7 @@ Our goal is to have a unified keyboard model that will accommodate a large numbe
 
 \subsection{Applications}
 
-Numerous applications have been built using versions of Interlisp including many early AI tools as well as ROOMS\cite{Henderson86}, NoteCards\cite{Xerox85}, LFG, Intelligent Database Assistant (IDA), LOOPS, and the Strategic Automated Discovery System (STRADS). Recently, an affiliate of Interlisp.org discovered an archive of the Stanford AI Laboratory, which contained several programs, including sources for Doug Lenat's AM and Eurisko programs\footnote{\url{https://white-flame.com/am-eurisko.html}}. These were written in an early version of Interlisp. Interlisp.org has demonstrated they can be loaded into a Medley Interlisp environment with minimal changes and are documenting how to make them usable again.
+Numerous applications have been built using versions of Interlisp including many early AI tools as well as ROOMS\cite{Henderson86}, NoteCards\cite{Xerox85}, a workbench for writing LFG grammars\cite{Kaplan03}, Intelligent Database Assistant (IDA), LOOPS, and the Strategic Automated Discovery System (STRADS). Recently, an affiliate of Interlisp.org discovered an archive of the Stanford AI Laboratory, which contained several programs, including sources for Doug Lenat's AM and Eurisko programs\footnote{\url{https://white-flame.com/am-eurisko.html}}. These were written in an early version of Interlisp. Interlisp.org has demonstrated they can be loaded into a Medley Interlisp environment with minimal changes and are documenting how to make them usable again.
 
 Interlisp.org is collecting open source Common Lisp programs and using them to test the Common Lisp implementing, making some changes to make them easier to use, and making them available through our GitHub repository for public use. Some of these applications include ATMS, BB1, NIKL, and several Common Lisp programs. Work will continue throughout this year to get them running in Medley reliably and provide minimal documentation (or more, if available).
 
@@ -353,7 +356,7 @@ Interlisp.org continues its technical outreach to the broader Lisp and Computer 
     \item BCS Computer Conservation Society (CCS): Steve Kaisler presented a talk entitled “Software Archaeology: The Medley Restoration Project” to the CCS Monthly Meeting on November 16 in London, England. It included a brief history of Interlisp, a brief review of some applications, and some issues and challenges in in modernizing Medley Interlisp (some of which have been presented in this paper).
 \end{itemize}
 
-Articles regarding Interlisp.org and the Medley Interlisp Project have appeared in Hackaday, Two Stop Bits, the Retrocomputing community on Lemmy, and comp.sys.xerox.
+Articles regarding Interlisp.org and the Medley Interlisp Project have appeared in Hackaday, Hacker News and The Register\cite{Proven23}.
 
 \section*{Acknowledgments}
 
