@@ -114,11 +114,9 @@
 %%
 %% The abstract is a short summary of the work to be presented in the
 %% article.
-The Medley Interlisp project aims to restore the Medley Interlisp programming environment for use on modern computers. Interlisp began as an ARPA-sponsored Lisp system for researchers. Upon gaining display capabilities it was renamed Interlisp-D.  Xerox spun out Interlisp-D sales and development with the "Medley" software release, which eventually became the product name. Medley development tapered off in the 1990s and was revived in 2021. The developers have given the current open source version the name "Medley Interlisp" to reflect its history.
-
 
 \begin{abstract}
-The Medley Interlisp revival is a project to restore Medley Interlisp for use on modern computers. Interlisp had its beginnings as a DARPA-sponsored Lisp environment for reasearchers. The language was then ported and expanded into Interlisp-D integrated with the Medley graphical user interface, first released by Xerox and distributed commercially until its development tapered off in the 1990s. Now this software system is running again on contemporary operating systems. The project is aimed at both preserving the Interlisp software created in the past and expanding the scope of what these tools can do and further realizing the promises of interactive, graphically augmented development.
+  The Medley Interlisp revival is a project to restore Medley Interlisp for use on modern computers. Interlisp began as a DARPA-sponsored Lisp environment for researchers, and after gaining display capabilities it was renamed Interlisp-D. Xerox spun out Interlisp-D sales and development with the "Medley" software release, which eventually became the product name. Medley development tapered off in the 1990s and was revived in 2021 by a team including many of the original PARC developers. Their effort is aimed at both preserving the Interlisp software created in the past and expanding the scope of what these tools can do to further realize the promises of interactive, graphically augmented development.
 \end{abstract}
 
 \begin{CCSXML}
@@ -282,7 +280,7 @@ Additional changes allowed the ingestion of Xerox Alto Bravo-format files that a
 HELPSYS was extended to allow look up and display of the Common Lisp Hyperspec and other Medley documentation.
 
 \subsubsection{PDFStream}
-Medley incorporated a native imagestream implementation for producing PostScript™ hardcopy files. It did not allow the production or display of PDF files directly. An interim solution developed in 2023 allows creating a PS file, then executing a UnixUtils shell script to convert it to PDF via Ghostscript's ps2pdf utility. Medley's FileBrowser was extended to automatically open PDF files in a separate window using a host-resident PDF viewer.
+Medley incorporated a native imagestream implementation for producing PostScript™ hardcopy files. The PDF format is not supported as it was not yet invented when this system was developed, but an interim PDF solution from 2023 allows creating a PS file and executing a UnixUtils shell script to convert it to PDF via Ghostscript's ps2pdf utility. Medley's FileBrowser was extended to automatically open PDF files in a separate window using a host-resident PDF viewer.
 
 \subsubsection{UnixUtils}
 
@@ -304,7 +302,7 @@ Our goal is to have a unified keyboard model that will accommodate a large numbe
 
 Numerous applications have been built using versions of Interlisp including many early AI tools as well as ROOMS\cite{Henderson86}, NoteCards\cite{Xerox85}, a workbench for writing LFG grammars\cite{Kaplan03}, Intelligent Database Assistant (IDA), LOOPS, and the Strategic Automated Discovery System (STRADS). Recently, an affiliate of Interlisp.org discovered an archive of the Stanford AI Laboratory, which contained several programs, including sources for Doug Lenat's AM and Eurisko programs\footnote{\url{https://white-flame.com/am-eurisko.html}}. These were written in an early version of Interlisp. Interlisp.org has demonstrated they can be loaded into a Medley Interlisp environment with minimal changes and are documenting how to make them usable again.
 
-Interlisp.org is collecting open source Common Lisp programs and using them to test the Common Lisp implementing, making some changes to make them easier to use, and making them available through our GitHub repository for public use. Some of these applications include ATMS, BB1, NIKL, and several Common Lisp programs. Work will continue throughout this year to get them running in Medley reliably and provide minimal documentation (or more, if available).
+Interlisp.org is collecting open source Common Lisp programs and using them to test the Common Lisp implementation, making some changes to make them easier to use, and making them available through our GitHub repository for public use. Some of these applications include ATMS, BB1, NIKL, and several Common Lisp programs. Work will continue throughout this year to get them running in Medley reliably and provide minimal documentation (or more, if available).
 
 \subsection{LOOPS}
 
