@@ -133,7 +133,7 @@
 \maketitle
 
 \section{Introduction}
-Interlisp.org, a US 501(c)3 non-profit organization, has resurrected and restored the Medley Interlisp System and has made substantial progress in modernizing and enhancing it. Medley Interlisp was the last version of the Interlisp system developed by Xerox Palo Alto Research Center (PARC). Significant accomplishments have been reducing the barriers to entry, the ease of building new versions for modern computing platforms, online access, and one-click installers for modern computing platforms.
+Interlisp.org, a US non-profit organization, is working to resurrect and restore the Medley Interlisp System and has made substantial progress in modernizing and enhancing it. Medley Interlisp was the last version of the Interlisp system developed by Xerox Palo Alto Research Center (PARC). Significant accomplishments have been reducing the barriers to entry, the ease of building new versions for modern computing platforms, online access, and one-click installers for modern computing platforms.
 
 It represented the end of a fruitful development period stretching from the late 1960s through the early 1990s. In the mid-1980s, Xerox PARC tapered off development and moved Medley Interlisp to Xerox AI Systems (a Xerox subsidiary). In the late 1980s, XAIS moved the system to Envos, which closed shortly thereafter. Venue acquired the rights to Medley Interlisp. Circa 2018, Ron Kaplan and Nick Briggs resurrected Medley Interlisp to begin transporting it to modern computing platforms to support natural language research.
 
@@ -209,7 +209,7 @@ Numerous tools were developed at other institutions than Xerox PARC, such as NAS
 
 The history of Interlisp is the history of the early years of Artificial Intelligence research as many AI researchers had access to DEC PDP-10/DECSystem-10 computer systems which could run relatively large programs in a 256K word real memory environment\cite{Bobrow74}. Interlisp provided a residential programming environment in which the standard software development functions of edit, compile, link, and execute, along with preparation of documentation, could be conducted without leaving the Interlisp environment\cite{Teitelman73}.
 
-In Interlisp, a user edits and evaluates Lisp objects that reside in an in-memory image. The code is saved to files that are more like code databases than traditional source files. Users do not edit the files, but load file contents into memory to edit, compile, and execute. Medley Interlisp keeps track of the changes that the user makes to source code that have been made by using the SEdit structure editor to edit in-memory objects. The File Manager provided a simple interface that archived the changes to the code to disk when the user closed a session or invoked a function. The beginning of a file specified metadata, which described the “file environment” and readtable associated with the file.
+In Interlisp, a user edits and evaluates Lisp objects that reside in an in-memory image. The code is saved to files that are more like code databases than traditional source files. Users do not edit the files, but load file contents into memory to edit, compile, and execute. Medley Interlisp keeps track of the changes that the user makes to source code that have been made by using the SEdit structure editor to edit in-memory objects. The File Manager provided a simple interface that archived the changes to the code to disk when the user closed a session or invoked a function. The beginning of a file specified metadata, which described the ``file environment'' and readtable associated with the file.
 
 The File Manager coordinated the development tools and readable code management tasks. It notices the changes to Lisp objects edited with SEdit or manipulated in memory, tracks what changed functions and objects need to be saved to symbolic files, and carries out the actions for building programs such as compiling or listing them (like some of the functions of Unix make).
 
@@ -253,7 +253,7 @@ The build scripts for the Maiko virtual machine were extended to support the AAr
 
 \subsubsection{Major Platform Installers}
 
-Installing Medley was a multi-step process, which required some expertise with the administrative tools of each major platform. A “single-step” installer using a ``one-click'' approach was developed for MacOS, windows (native), Windows running WSL and Cygwin, and many Linux distributions, which allows a Medley user to quickly and easily install a Medley release and begin exploring or performing effective work.
+Installing Medley was a multi-step process, which required some expertise with the administrative tools of each major platform. A ``single-step'' installer using a ``one-click'' approach was developed for MacOS, windows (native), Windows running WSL and Cygwin, and many Linux distributions, which allows a Medley user to quickly and easily install a Medley release and begin exploring or performing effective work.
 
 \subsection{Medley Interlisp}
 
@@ -265,7 +265,7 @@ With the groundswell of support for Common Lisp in the mid-1980s, Xerox PARC ext
 
 %% For example, two versions of the Exec window are initialized as shown in Figure 1 – one using the Interlisp Readtable and functionality selected by the package IL: and one using the Common Lisp Readtable and functionality selected by the package CL:. Both can be used in the same application with transition between the two variants, but there are some rough edges we are working out.
 
-The Common Lisp integration with the Interlisp tools was incomplete. Substantial work has made it easier to use many of the Interlisp tools and utilities, such as HELPSYS, DWIM, and MasterScope. Also, some of the functions and directives in CLtL2 are not available (such as 'declaim' versus 'proclaim'). As we discover these, we are determining how to provide the missing functionality, but some might not be available until later in 2024.
+The Common Lisp integration with the Interlisp tools was incomplete. Substantial work has made it easier to use many of the Interlisp tools and utilities, such as HELPSYS, DWIM, and MasterScope. Also, some of the functions and directives in CLtL2 are not available (such as 'declaim' versus 'proclaim'). As we discover these we are determining how to provide the missing functionality, but some might not be available until later in 2024.
 
 \subsubsection{Editing and Browsing Support}
 
@@ -351,7 +351,7 @@ Interlisp.org continues its technical outreach to the broader Lisp and Computer 
 \begin{itemize}
     \item BALISP: In March 2023, the project's efforts were presented to the Bay Area Lisp meetup group. The slides are available on the project's Google Drive\footnote{https://drive.google.com/file/d/1xpXSoEnc5PPnIa7BHcionBbc8v-Nxp7N/view?usp=sharing} and the talk was on Youtube\footnote{https://www.youtube.com/watch?v=N1MobfEaoWY}.
     \item Software Preservation Network (SPN): On November 2, Larry Masinter presented to the SPN Idea's Workshop technical details of our work as well as suggesting future collaborative projects across the community.
-    \item BCS Computer Conservation Society (CCS): Steve Kaisler presented a talk entitled “Software Archaeology: The Medley Restoration Project” to the CCS Monthly Meeting on November 16 in London, England. It included a brief history of Interlisp, a brief review of some applications, and some issues and challenges in in modernizing Medley Interlisp (some of which have been presented in this paper).
+    \item BCS Computer Conservation Society (CCS): Steve Kaisler presented a talk entitled ``Software Archaeology: The Medley Restoration Project'' to the CCS Monthly Meeting on November 16 in London, England. It included a brief history of Interlisp, a brief review of some applications, and some issues and challenges in in modernizing Medley Interlisp (some of which have been presented in this paper).
 \end{itemize}
 
 Articles regarding Interlisp.org and the Medley Interlisp Project have appeared in Hackaday, Hacker News and The Register\cite{Proven23}.
