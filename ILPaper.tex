@@ -116,11 +116,19 @@
 %% article.
 
 \begin{abstract}
-  The Medley Interlisp revival is a project to restore Medley Interlisp for use on modern computers. Interlisp began as a DARPA-sponsored Lisp environment for researchers, and after gaining display capabilities it was renamed Interlisp-D. Xerox spun out Interlisp-D sales and development with the "Medley" software release, which eventually became the product name. Medley development tapered off in the 1990s and was revived in 2021 by a team including many of the original PARC developers. Their effort is aimed at both preserving the Interlisp software created in the past and expanding the scope of what these tools can do to further realize the promises of interactive, graphically augmented development.
+  The Medley Interlisp revival is a project to restore Medley Interlisp for use on modern computers. Interlisp began as a Lisp environment for researchers sponsored by DARPA, and after gaining display capabilities it was renamed Interlisp-D. Xerox spun out sales and development of Interlisp-D with the "Medley" software release, which eventually became the product name. Medley development tapered off in the 1990s and was revived in 2021 by a team including many of the original PARC developers. Their effort is aimed at both preserving the Interlisp software created in the past and expanding the scope of what these tools can do to further realize the promises of interactive, graphically augmented development.
 \end{abstract}
 
 \begin{CCSXML}
 \end{CCSXML}
+
+\begin{teaserfigure}
+  \includegraphics[width=\textwidth]{MedleyShot02t}
+  \caption{A screenshot of the current Medley implementation.}
+  \Description{A screenshot of the current Medley implementation.}
+  \label{fig:teaser}
+\end{teaserfigure}
+
 
 %% \begin{teaserfigure}
 %%   \usebox{\verbteaserbox}
@@ -133,20 +141,20 @@
 \maketitle
 
 \section{Introduction}
-Interlisp.org, a US non-profit organization, is working to resurrect and restore the Medley Interlisp System and has made substantial progress in modernizing and enhancing it. Medley Interlisp was the last version of the Interlisp system developed by Xerox Palo Alto Research Center (PARC). Significant accomplishments have been reducing the barriers to entry, the ease of building new versions for modern computing platforms, online access, and one-click installers for modern computing platforms. The Medley software has been released under an open source license, available for download at \url{https://interlisp.org}.
+Interlisp.org, a US non-profit organization, is working to resurrect and restore the Medley Interlisp System and has made substantial progress in modernizing and enhancing it. Medley Interlisp was the last version of the Interlisp system developed by Xerox Palo Alto Research Center (PARC). Accomplishments thus far have included reducing  barriers to entry, making it easier to build versions for modern computing platforms, the creation of an online Medley system accessible through a Web browser, and one-click installers for major operating systems. The Medley software has been released under an open source license, available for download at \url{https://interlisp.org}.
 
-It represented the end of a fruitful development period stretching from the late 1960s through the early 1990s. In the mid-1980s, Xerox PARC tapered off development and moved Medley Interlisp to Xerox AI Systems (a Xerox subsidiary). In the late 1980s, XAIS moved the system to Envos, which closed shortly thereafter. Venue acquired the rights to Medley Interlisp. Circa 2018, Ron Kaplan and Nick Briggs resurrected Medley Interlisp to begin transporting it to modern computing platforms to support natural language research.
+The system's original release came near the end of a fruitful period for interactive software development stretching from the late 1960s through the early 1990s. In the mid-1980s, Xerox PARC tapered off development and moved Medley Interlisp to Xerox AI Systems (a Xerox subsidiary). In the late 1980s, XAIS moved the system to Envos, which closed shortly thereafter and led to a company called Venue acquiring the rights to Medley Interlisp. Circa 2018, Ron Kaplan and Nick Briggs resurrected Medley Interlisp to begin transporting it to modern computing platforms to support natural language research.
 
-In 2020, the Medley Project was formed with the goal to modernize the Interlisp ecosystem bringing the concepts and experience of working in this system to modern computing platforms, such as Windows, MacOS, and Linux. Interlisp.org was formed to organize these efforts, provide versions of Medley Interlisp to interested users, and provide a repository for source code and documentation. Interlisp.org has been successful in this endeavor as Medley Interlisp now runs on the indicated platforms as well as a browser-based, online version and a Raspberry Pi version. Interlisp.org has also resurrected several applications including ROOMS, Notecards, LOOPS and others. It has developed an online Zotero repository containing a comprehensive collection of Lisp documentation as well as an extensive collection of Interlisp papers, books, and technical material. Selected source code is also available for contributed programs.
+In 2020, the Medley Project was formed with the goal of modernizing the Interlisp ecosystem, opening the way for present-day developers to experience its concepts and principles on modern computing platforms like Windows, MacOS and Linux. Interlisp.org was formed to organize these efforts, provide versions of Medley Interlisp to interested users, and provide a repository for source code and documentation. Interlisp.org has been successful in this endeavor as Medley Interlisp now runs on the indicated platforms as well as a browser-based, online version and a Raspberry Pi version. Interlisp.org has also resurrected several applications including ROOMS, Notecards, LOOPS and others. It has assembled an online Zotero repository containing a comprehensive collection of Lisp documentation along with Interlisp papers, books, and technical material. Selected source code is also available for contributed programs.
 
 \section{The Project}
 
 Interlisp.org received the source code for Medley Interlisp and its applications from Venue Corporation. Interlisp.org consists of a group of volunteers –- original developers, former users, software historians interested in software preservation, and people interested in software archaeology. This group has focused on:
 
 \begin{itemize}
-  \item Modernizing the infrastructure and source code of Medley Interlisp;
+  \item Modernizing Medley's infrastructure and source code;
 
-  \item Adapt Medley to run on modern computing platforms;
+  \item Adapting the system to run on modern computing platforms;
 
   \item Reducing the barrier to entry for new users; 
 
@@ -177,7 +185,7 @@ Notable is Medley's support for two Lisp dialects: Common Lisp and Interlisp. Th
 
 \section{Adaptation to Modern Platforms}
 
-Interlisp.org is engaged in restoring the Medley Interlisp ecosystem, including tools, utilities, and applications, and provides public versions of source code and binary code for modern computing platforms, and available documentation. All of these artifacts are available through Interlisp.org's GitHub and Zotero repositories. The open source version for modern computing platforms consists of:
+Interlisp.org is engaged in restoring the Medley Interlisp ecosystem, including tools, utilities, and applications, and provides public versions of source and binary code for modern computing platforms, and available documentation. All of these artifacts are available through Interlisp.org's GitHub and Zotero repositories. The open source version for modern computing platforms consists of:
 
 \begin{itemize}
   \item Maiko, the emulation software that implements the Interlisp Virtual Machine;
@@ -195,6 +203,8 @@ Additionally, Interlisp.org provides public access to its Zotero repository, whi
 
 Easy access to Medley Interlisp will help (re)introduce potential users to Interlisp in a way that allows them to learn and experience its features while building their expertise. Interlisp was developed before current conventions for mouse and window-driven software development as well as Unicode's standards for textual representation. Medley has been modernized to give the users the look and feel that they are accustomed to current systems.
 
+%% ===
+
 Interlisp.org created an online version of Medley Interlisp using Docker and Amazon Web Services, providing for users to experience the system through a web browser without running any of the Medley system's components on their local computing platform. When they are ready, if they choose, they can install a version of Medley Interlisp onto a local computer system and download files created through the online version to be used on the same system.
 
 Online Interlisp has 428 registered users who accounted for 1685 online sessions during 2023. In addition, there were 2,588 anonymous guest user sessions.
@@ -209,9 +219,9 @@ Numerous tools were developed at other institutions than Xerox PARC, such as NAS
 
 The history of Interlisp is the history of the early years of Artificial Intelligence research as many AI researchers had access to DEC PDP-10/DECSystem-10 computer systems which could run relatively large programs in a 256K word real memory environment\cite{Bobrow74}. Interlisp provided a residential programming environment in which the standard software development functions of edit, compile, link, and execute, along with preparation of documentation, could be conducted without leaving the Interlisp environment\cite{Teitelman73}.
 
-In Interlisp, a user edits and evaluates Lisp objects that reside in an in-memory image. The code is saved to files that are more like code databases than traditional source files. Users do not edit the files, but load file contents into memory to edit, compile, and execute. Medley Interlisp keeps track of the changes that the user makes to source code that have been made by using the SEdit structure editor to edit in-memory objects. The File Manager provided a simple interface that archived the changes to the code to disk when the user closed a session or invoked a function. The beginning of a file specified metadata, which described the ``file environment'' and readtable associated with the file.
+In Interlisp, a user edits and evaluates Lisp objects that reside in an in-memory image. The code is saved to files that are more like code databases than traditional source files. Users do not edit the files, but load file contents into memory to edit, compile, and execute. Medley Interlisp keeps track of the changes that the user makes to source code that have been made by using the SEdit structure editor to edit in-memory objects. The File Manager provides a simple interface that archived the changes to the code to disk when the user closed a session or invoked a function. The beginning of a file specified metadata, which described the ``file environment'' and readtable associated with the file.
 
-The File Manager coordinated the development tools and readable code management tasks. It notices the changes to Lisp objects edited with SEdit or manipulated in memory, tracks what changed functions and objects need to be saved to symbolic files, and carries out the actions for building programs such as compiling or listing them (like some of the functions of Unix make).
+The File Manager coordinates the development tools and readable code management tasks. It notices the changes to Lisp objects edited with SEdit or manipulated in memory, tracks what changed functions and objects need to be saved to symbolic files, and carries out the actions for building programs such as compiling or listing them (like some of the functions of Unix make).
 
 This model is unique even today as no programming system apart from Smalltalk provides the same capabilities. As Smalltalk was developed concurrently with Interlisp, many of the ideas percolated between the development groups at PARC, albeit with different implementations.
 
@@ -219,28 +229,28 @@ Although Interlisp was not the first version of Lisp (there were several on main
 
 \section{Medley Interlisp Ecosystem}
 
-The Medley Interlisp Ecosystem is comprised of the following components:
+The Medley Interlisp Ecosystem includes the following components:
 
 \begin{itemize}
   \item Maiko, the emulator software for the Interlisp virtual machine;
   \item Medley Interlisp, the Interlisp source code and its utilities and tools;
-  \item Applications, including several Interlisp applications, such as ROOMS, Notecards, LFG, STRADS, IDA, as well as other Lisp system applications.
+  \item Applications, including several Interlisp applications, such as ROOMS, Notecards, LFG, STRADS, IDA, as well as other Lisp system applications; and
   \item Documentation, a comprehensive collection of books, papers, technical memoranda, and manuals regarding Interlisp, and extending to other Lisp variants.
 \end{itemize}
 
-Interlisp.org welcomes submissions and contributions of source code, and documentation to add to its repositories.
+Interlisp.org welcomes contributions of source code and documentation to add to its repositories.
 
-The following sections will briefly describe each of these components and some of the activities performed to make them operational. The activities described barely cover the effort expended by many people to resurrect, restore, modernize, and document the effort required to accomplish our goals.
+The following sections briefly describe each of these components and the work done to make them operational. The descriptions hereafter can only faintly reflect the effort expended by many people to restore, modernize, and document Interlisp software.
 
 \subsection{Maiko}
 
-Maiko is the emulator that implements the virtual machine upon which Interlisp runs.\footnote{\url{https://github.com/Interlisp/maiko}} Maiko was initially developed by Fuji Xerox, but acquired by Xerox PARC, which continued to maintain and enhance it. Written in Kernighan and Ritchie C, Interlisp.org developers have modernized it making it ANSI C compatible. A few of these modifications included resolving issues of signed vs. unsigned characters, adding prototypes for functions, ensuring all parameters have types, fixing some errors in incorrect translation of Lisp code to C code, and optimizing all virtual machines' opcodes. 
+Maiko is the emulator that implements the virtual machine upon which Interlisp runs.\footnote{\url{https://github.com/Interlisp/maiko}} Maiko was initially developed by Fuji Xerox but acquired by Xerox PARC, which continued to maintain and enhance it. Written in Kernighan and Ritchie C, Interlisp.org developers have modernized it, making it ANSI C compatible. A few of these modifications included resolving issues of signed vs. unsigned characters, adding prototypes for functions, ensuring all parameters have types, fixing some errors in incorrect translation of Lisp code to C code, and optimizing all virtual machines' opcodes. 
 
 This modernization facilitated the transport of the Medley Interlisp ecosystem to modern computing platforms with some effort. Numerous programming changes were made to ensure that Maiko could run on Windows 10/11, MacOS versions, and Linux and WSL-based platforms, as well as an online version accessible through browsers that runs within a Docker container.
  
 \subsubsection{Running Natively on Windows 10/11}
 
-Previously, running on Windows required the Medley Docker container or via WSL. Both required significant setup and expertise not possessed by most Windows users. Native support was developed using Cygwin and SDL2 which allowed the development of a one-click installer from an \texttt{.exe} file.
+Previously, running on Windows required the use of the Medley Docker container or WSL. Both required significant effort to set up along with knowledge not possessed by most Windows users. Native support was developed using Cygwin and SDL2, allowing the development of a one-click installer in the form of an \texttt{.exe} file.
 
 \subsubsection{Support for AArch64}
 
@@ -263,6 +273,8 @@ Medley Interlisp comprises the basic code implementing the Interlisp language an
 
 With the groundswell of support for Common Lisp in the mid-1980s, Xerox PARC extended the Interlisp environment to support Common Lisp, specifically, as of Common Lisp: The Language, Version 1 (CLtL1), along with CLOS and CL's condition system. The infrastructure supporting Interlisp and Common Lisp is completely integrated such that selection of functionality by either Interlisp or Common Lisp depends merely on the use of packages.
 
+%% ^^ WHAT DOES THIS MEAN?
+
 %% For example, two versions of the Exec window are initialized as shown in Figure 1 – one using the Interlisp Readtable and functionality selected by the package IL: and one using the Common Lisp Readtable and functionality selected by the package CL:. Both can be used in the same application with transition between the two variants, but there are some rough edges we are working out.
 
 The Common Lisp integration with the Interlisp tools was incomplete. Substantial work has made it easier to use many of the Interlisp tools and utilities, such as HELPSYS, DWIM, and MasterScope. Also, some of the functions and directives in CLtL2 are not available (such as 'declaim' versus 'proclaim'). As we discover these we are determining how to provide the missing functionality, but some might not be available until later in 2024.
@@ -271,13 +283,11 @@ The Common Lisp integration with the Interlisp tools was incomplete. Substantial
 
 Since the early 1980s, Medley Interlisp has had a 16-bit internal representation of characters in strings and atoms using the internal Xerox XCCS codes\cite{Nuyens86}. These codes have been mapped into the appropriate glyphs for display and printing. The character reading/writing functions have been generalized in the external format project. If a file's external format is specified as UTF-8 when a stream is opened, UTF-8 byte sequences are read into 16-bit (Unicode) codes, which are translated into their XCCS equivalents before being delivered to the calling function. Support for ISO8859 and certain Japanese conventions are also provided. These external formats push the coding and format concerns to the periphery of reading/writing, thus isolating the internal processing functions\cite{Kaplan21}.
 
-TEdit, the text editor, was extended with UTF-8 support that improved system efficiency, reliability, and maintainability\cite{Xerox86}. TEdit reads all characters into an internal editing buffer. And creates pointers to the bytes on the file that represent those characters. It only interprets those bytes when it needs to display that section of the file, or needs to move characters from one place to another in the file, or copy them to some other application. Thus, a TEdit session on a large file opens quickly and only occupies a small amount of memory.
+TEdit, the text editor, was extended with UTF-8 support that improved system efficiency, reliability, and maintainability\cite{Xerox86}. TEdit reads all characters into an internal editing buffer and creates pointers to the bytes on the file that represent those characters. It only interprets those bytes when it needs to display that section of the file, move characters from one place to another in the file, or copy them to some other application. Thus a TEdit session on a large file opens quickly and only occupies a small amount of memory.
 
-TEdit has consumed a major portion of the modernization effort over the past three years because assumptions about the XCCS file format were threaded all through the core TEdit implementation. Every location of XCCS code usage had to be tracked down. This revealed a variety of bugs, glitches, behaviors, and major maintainability issues, which required substantial refactoring. As of December 2023, this effort is finally coming to the end which has significantly improved the robustness and reliability of the Medley Interlisp system.
+TEdit has consumed a major portion of the modernization effort over the past three years because assumptions about the XCCS file format were threaded all through the core TEdit implementation. Every location of XCCS code usage had to be tracked down. This revealed a variety of bugs, glitches, inconsistent behaviors and maintainability issues, which required substantial refactoring. As of Spring 2024, this effort is finally coming to the end which has significantly improved the robustness and reliability of the Medley Interlisp system.
 
-Additional changes allowed the ingestion of Xerox Alto Bravo-format files that allowed legacy documents to be converted to PDF through invocation of an external converter.
-
-HELPSYS was extended to allow look up and display of the Common Lisp Hyperspec and other Medley documentation.
+Additional changes allowed the ingestion of Xerox Alto Bravo-format files, making it possible for legacy documents to be converted to PDF through invocation of an external converter. Also, HELPSYS was extended to allow lookup and display of the Common Lisp Hyperspec and other Medley documentation.
 
 \subsubsection{PDFStream}
 Medley incorporated a native imagestream implementation for producing PostScript™ hardcopy files. The PDF format is not supported as it was not yet invented when this system was developed, but an interim PDF solution from 2023 allows creating a PS file and executing a UnixUtils shell script to convert it to PDF via Ghostscript's ps2pdf utility. Medley's FileBrowser was extended to automatically open PDF files in a separate window using a host-resident PDF viewer.
